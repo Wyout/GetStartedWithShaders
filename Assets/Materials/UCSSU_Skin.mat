@@ -230,6 +230,7 @@ Material:
     - _Offset_X_Axis_BLD: -0.05
     - _Offset_Y_Axis_BLD: 0.09
     - _Offset_Z: 0
+    - _OutlineWidth: 1
     - _Outline_Width: 2
     - _Parallax: 0.02
     - _QueueOffset: 0
@@ -247,9 +248,12 @@ Material:
     - _Scroll_EmissiveV: 0
     - _Set_SystemShadowsToBase: 1
     - _ShadeColor_Step: 0.464
+    - _ShadowThreshold: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SpecularPower: 20
+    - _SpecularThreshold: 0.974
     - _SrcBlend: 1
     - _StencilComp: 0
     - _StencilMode: 0
@@ -294,9 +298,12 @@ Material:
     - _Emissive_Color: {r: 0, g: 0, b: 0, a: 1}
     - _HighColor: {r: 0, g: 0, b: 0, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.27672952, g: 0.27672952, b: 0.27672952, a: 1}
     - _Outline_Color: {r: 0.10710279, g: 0.10355108, b: 0.122641504, a: 1}
     - _RimLightColor: {r: 0.9811321, g: 0.8270221, b: 0.63403344, a: 1}
+    - _ShadowColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _ViewShift: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6093333274390306448

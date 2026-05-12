@@ -15,15 +15,23 @@ MonoBehaviour:
   version: 1
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UCSSU_Hoodie
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSIVE_SIMPLE _GLOSSYREFLECTIONS_OFF _IS_ANGELRING_OFF _IS_CLIPPING_MODE
-    _IS_OUTLINE_CLIPPING_YES _OUTLINE_NML
+  m_Shader: {fileID: 4800000, guid: 31bd2f40513c2fd44ae2dcab5de49641, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSIVE_SIMPLE
+  - _GLOSSYREFLECTIONS_OFF
+  - _IS_ANGELRING_OFF
+  - _IS_CLIPPING_MODE
+  - _IS_OUTLINE_CLIPPING_YES
+  - _OUTLINE_NML
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -31,6 +39,7 @@ Material:
   stringTagMap:
     IgnoreProjection: False
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -150,6 +159,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _1st2nd_Shades_Feather: 0.0001
     - _1st_ShadeColor_Feather: 0.0001
@@ -250,9 +260,12 @@ Material:
     - _Scroll_EmissiveV: 0
     - _Set_SystemShadowsToBase: 1
     - _ShadeColor_Step: 0.48
+    - _ShadowThreshold: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SpecularPower: 20
+    - _SpecularThreshold: 0.5
     - _SrcBlend: 1
     - _StencilComp: 0
     - _StencilMode: 0
@@ -299,5 +312,8 @@ Material:
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
     - _Outline_Color: {r: 0.22793661, g: 0.13207547, b: 0.5283019, a: 1}
     - _RimLightColor: {r: 1, g: 0.7942239, b: 0.5330188, a: 1}
+    - _ShadowColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _SpecularColor: {r: 0, g: 0, b: 0, a: 1}
     - _ViewShift: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
