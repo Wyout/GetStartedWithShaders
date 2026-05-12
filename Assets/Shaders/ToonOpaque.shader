@@ -104,7 +104,6 @@ Shader "GetStartedWithShader/ToonOpaque"
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #pragma multi_compile_fwdbase
 
             #include "UnityCG.cginc"
 
@@ -129,8 +128,6 @@ Shader "GetStartedWithShader/ToonOpaque"
             {
                 float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
-                float3 normalDir : TEXCOORD1;
-                float3 worldPos : TEXCOORD2;
             };
 
             v2f vert (appdata v)
@@ -152,6 +149,7 @@ Shader "GetStartedWithShader/ToonOpaque"
 
             half4 frag (v2f i) : SV_Target
             {
+                //texture color affects outline color
                 half3 albedo = tex2D(_MainTex, i.uv).rgb * _Color.rgb;
                 half3 color = albedo * _OutlineColor.rgb;
 
