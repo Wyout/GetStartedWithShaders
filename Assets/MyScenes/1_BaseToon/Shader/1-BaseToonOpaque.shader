@@ -4,12 +4,14 @@ Shader "GetStartedWithShader/ToonOpaque"
     {
         _MainTex ("Texture", 2D) = "white" {}
         _Color("Main Color", Color) = (1.0, 1.0, 1.0, 1.0)
+
         _ShadowThreshold("Shadow Threshold", Range(-1.0, 1.0)) = 0.0
         _ShadowColor ("Shadow Color", Color) = (0.5, 0.5, 0.5, 1.0)
 
         [HDR] _SpecularColor("Specular Color", Color) = (0.0, 0.0, 0.0, 1.0)
         _SpecularPower("Specular Power", float) = 20
         _SpecularThreshold("Specular Threshold", Range(0.0, 1.0)) = 0.5
+        
         _OutlineWidth("Outline Width", Range(0.0, 3.0)) = 1.0
         _OutlineColor("Outline Color", Color) = (0.5, 0.5, 0.5)
     }
@@ -142,6 +144,7 @@ Shader "GetStartedWithShader/ToonOpaque"
                 float3 viewNormal = mul((float3x3)UNITY_MATRIX_IT_MV, v.normal);
                 viewNormal.z = -0.5;
                 viewPos = viewPos + normalize(viewNormal) * _OutlineWidth * 0.002;
+                
                 o.vertex = mul(UNITY_MATRIX_P, float4(viewPos, 1.0));
 
                 return o;
