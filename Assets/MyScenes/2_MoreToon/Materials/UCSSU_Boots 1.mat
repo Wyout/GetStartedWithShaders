@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UCSSU_Boots 1
-  m_Shader: {fileID: 4800000, guid: a31ff92af3e19d34183afabfbe5a45c1, type: 3}
+  m_Shader: {fileID: 4800000, guid: 0377f020a2b376e4bae3a9bb5f60bfde, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -314,7 +314,7 @@ Material:
     - _Outline_Color: {r: 0, g: 0, b: 0, a: 1}
     - _RimLightColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _ShadowColor1st: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowColor1st: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
     - _ShadowColor2nd: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0, g: 0, b: 0, a: 0}
