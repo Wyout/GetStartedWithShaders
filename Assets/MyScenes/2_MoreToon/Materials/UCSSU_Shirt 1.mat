@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UCSSU_Shirt 1
-  m_Shader: {fileID: 4800000, guid: a31ff92af3e19d34183afabfbe5a45c1, type: 3}
+  m_Shader: {fileID: 4800000, guid: d87aba452afe9a941928f838011f5948, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -241,6 +241,7 @@ Material:
     - _BumpScale: 1
     - _BumpScaleMatcap: 1
     - _CameraRolling_Stabilizer: 0
+    - _ClipThreshold: 0.5
     - _ClippingMode: 0
     - _Clipping_Level: 0
     - _ColorShift_Speed: 0

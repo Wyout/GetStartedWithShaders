@@ -264,6 +264,7 @@ Material:
     - _RimLight_FeatherOff: 1
     - _RimLight_InsideMask: 0.525
     - _RimLight_Power: 0.525
+    - _RimPower: 14.7
     - _Rotate_EmissiveUV: 0
     - _Rotate_MatCapUV: 0
     - _Rotate_NormalMapForMatCapUV: 0
@@ -325,6 +326,7 @@ Material:
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
     - _Outline_Color: {r: 0.22793661, g: 0.13207547, b: 0.5283019, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimLightColor: {r: 1, g: 0.7942239, b: 0.5330188, a: 1}
     - _ShadowColor: {r: 0.7169812, g: 0.5664863, b: 0.31339738, a: 1}
     - _ShadowColor1st: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}

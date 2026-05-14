@@ -1,4 +1,4 @@
-Shader "GetStartedWithShader/MoreToon"
+Shader "GetStartedWithShader/AlphaToon"
 {
     Properties
     {
@@ -13,16 +13,21 @@ Shader "GetStartedWithShader/MoreToon"
 
         [HDR] _SpecularColor("Specular Color", Color) = (0.0, 0.0, 0.0, 1.0)
         _SpecularPower("Specular Power", float) = 20
-
-        [HDR] _RimColor("Rim Color", Color) = (1.0, 1.0, 1.0, 1.0)
-        _RimPower("Rim Power", float) = 2
         
         _OutlineWidth("Outline Width", Range(0.0, 3.0)) = 1.0
         _OutlineColor("Outline Color", Color) = (0.5, 0.5, 0.5)
+
+        _ClipThreshold("Clip Threshold", Range(0.0, 1.0)) = 0.5
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType" = "Transparent" "Queue" = "Transparent" } // "Transparent = 3000"
+
+        Pass
+        {
+            ZWrite On
+            ColorMask 0
+        }
 
         Pass
         {
@@ -36,6 +41,7 @@ Shader "GetStartedWithShader/MoreToon"
             #pragma multi_compile_fwdbase
 
             #include "UnityCG.cginc"
+            #define IS_CLIP
             #include "Assets/MyScenes/0_Common/ShadingCommon.cginc"
 
             ENDCG
@@ -54,6 +60,7 @@ Shader "GetStartedWithShader/MoreToon"
             #pragma fragment frag
 
             #include "UnityCG.cginc"
+            #define IS_TRANSPARENT
             #include "Assets/MyScenes/0_Common/OutlineCommon.cginc"
             
             ENDCG

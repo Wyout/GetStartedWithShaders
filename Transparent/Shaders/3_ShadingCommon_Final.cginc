@@ -24,7 +24,7 @@ float4 _LightColor0;
 struct a2v
 {
 	float4 vertex : POSITION;
-	float2 uv : TEXCOORD0;
+	float2 uv : TEXCOORD0;a
 	float3 normal : NORMAL;
 };
 
@@ -76,7 +76,6 @@ half4 frag(v2f i) : SV_Target
 
 	// Rimlight
 	half nv = dot(normalDir, viewDir);
-
 	half rimlightGradient = tex2D(_GradientMap, float2(pow(max(1.0 - clamp(nv, 0.0, 1.0), 1e-5), _RimlightPower), 0.5)).a;
 	half rimlightMask = tex2D(_RimlightMask, i.uv);
 	half3 rimlight = rimlightGradient * _RimlightColor.rgb * rimlightMask * diff;
